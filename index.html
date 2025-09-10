@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Web Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+    <h1>Interactive Web Page Assignment</h1>
+
+    <!-- ==============================
+         PART 1: Event Handling
+         ============================== -->
+    <section>
+        <h2>Event Handling</h2>
+        <button id="myButton">Click Me</button>
+        <div id="hoverBox">Hover over me!</div>
+        <input type="text" id="nameInput" placeholder="Type your name">
+        <p id="greet"></p>
+    </section>
+
+    <!-- ==============================
+         PART 2: Interactive Features
+         ============================== -->
+    <section>
+        <h2>Interactive Features</h2>
+        <!-- Light/Dark Mode Toggle -->
+        <button id="themeBtn">Toggle Dark Mode</button>
+
+        <!-- Counter -->
+        <button id="counterBtn">Click Counter</button>
+        <p>Count: <span id="count">0</span></p>
+
+        <!-- Collapsible FAQ -->
+        <div class="faq">
+            <h3 class="question">What is JavaScript?</h3>
+            <p class="answer">JavaScript is a programming language for web interactivity.</p>
+        </div>
+        <div class="faq">
+            <h3 class="question">What is an Event?</h3>
+            <p class="answer">An event is a user action like a click, hover, or key press.</p>
+        </div>
+    </section>
+
+    <!-- ==============================
+         PART 3: Form Validation
+         ============================== -->
+    <section>
+        <h2>Sign Up Form</h2>
+        <form id="signupForm" novalidate>
+            <input type="text" id="name" placeholder="Name">
+            <small id="nameError" class="error"></small>
+
+            <input type="email" id="email" placeholder="Email">
+            <small id="emailError" class="error"></small>
+
+            <input type="password" id="password" placeholder="Password">
+            <small id="passwordError" class="error"></small>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <small id="confirmPasswordError" class="error"></small>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="successMsg"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
